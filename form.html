@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>맹구 퀴즈</title>
+    <style>
+      @font-face {
+        font-family: "Cafe24Supermagic-Bold-v1.0";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2")
+          format("woff2");
+        font-weight: 400;
+        font-style: normal;
+      }
+      body {
+        margin: 20px;
+        background-color: lemonchiffon;
+        padding: 20px;
+        padding-top: 5px;
+        font-family: "Cafe24Supermagic-Bold-v1.0";
+        border: 3px solid orange;
+        border-radius: 10px;
+      }
+      input {
+        border: 2px solid sandybrown;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="text"] {
+        border-width: 1px;
+        cursor: default;
+      }
+      input[type="submit"] {
+        border-width: 0px;
+        background-color: sandybrown;
+        width: 80px;
+        font-family: "Cafe24Supermagic-Bold-v1.0";
+        font-size: 20px;
+        /* cursor: pointer; */
+        /* font-size: large; */
+      }
+      h2,
+      form[name="submit"] {
+        text-align: center;
+        margin-top: 40px;
+      }
+      form[name="fo"] {
+        text-align: right;
+        padding-right: 20px;
+      }
+      form[name="quiz"] {
+        padding-left: 20px;
+      }
+      label {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      label > img {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      맹구 퀴즈<img
+        src="heart-orange.webp"
+        width="60px"
+        style="position: relative; bottom: -20px; left: -30px; opacity: 0.5"
+      />
+    </h2>
+    <form name="fo" method="get">
+      <label>이름: <input type="text" size="15" value="" /> </label>
+    </form>
+    <br />
+    <form name="quiz">
+      <h4>1. 맹구의 특징으로 옳은 것을 선택하시오.</h4>
+      콧물 <input type="radio" name="charactar" value="1" /> 눈물<input
+        type="radio"
+        name="charactar"
+        value="2"
+      />
+      침<input type="radio" name="charactar" value="3" />
+      <br />
+      <h4>
+        2. 떡잎마을 방범대 안에서 맹구만 (<span style="visibility: hidden"
+          >성</span
+        >)이 공개되지 않았다. 빈칸에 해당하는 걸 고르시오.
+      </h4>
+      집 <input type="radio" name="secret" value="1" /> 부모님<input
+        type="radio"
+        name="secret"
+        value="2"
+      />
+      성<input type="radio" name="secret" value="3" /> 키<input
+        type="radio"
+        name="secret"
+        value="4"
+      />
+      몸무게<input type="radio" name="secret" value="5" />
+      <h4>3. 귀여운 맹구를 모두 선택하시오.</h4>
+      <label>
+        <input type="checkbox" value="1" />쿼카맹구
+
+        <img src="쿼카맹구.jpeg" width="200" />
+      </label>
+
+      <label>
+        <input type="checkbox" value="2" />하트맹구
+
+        <img src="하트맹구.jpeg" width="200" />
+      </label>
+      <label>
+        <input type="checkbox" value="3" />반짝맹구
+
+        <img src="반짝맹구.jpeg" width="200" />
+      </label>
+      <br /><br />
+
+      <label>
+        <input type="checkbox" value="4" />감자맹구
+
+        <img src="감자맹구.jpeg" width="200" height="190" />
+      </label>
+
+      <label>
+        <input type="checkbox" value="5" />교복맹구
+
+        <img src="교복맹구.jpeg" width="200" height="190" />
+      </label>
+      <label>
+        <input type="checkbox" value="6" />금발맹구
+
+        <img src="금발뱅구.jpeg" width="200" height="190" />
+      </label>
+      <br />
+    </form>
+    <form name="submit">
+      <input type="submit" value="제출" />
+    </form>
+  </body>
+</html>

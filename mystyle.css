@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Cafe24Supermagic-Bold-v1.0";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+body {
+  cursor: pointer;
+  background-color: lemonchiffon;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  font-family: "Cafe24Supermagic-Bold-v1.0";
+  border: 3px solid orange;
+  border-radius: 10px;
+}
+hr {
+  border: 3px dotted orange;
+  margin-bottom: 15px;
+}
+a {
+  color: coral;
+}
+h1 > img {
+  margin-bottom: -15px;
+  animation: slide 3s linear infinite;
+}
+video:hover {
+  transform: scale(1.5, 1.5);
+}
+h3 {
+  background: linear-gradient(45deg, sandybrown, lemonchiffon);
+  display: inline-block;
+  border-radius: 50px;
+  box-shadow: 1px 1px 1px sandybrown;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+a:hover {
+  color: tomato;
+}
+a:visited {
+  color: teal;
+}
+td > img {
+  border-radius: 20px;
+}
+audio {
+  box-shadow: 3px 3px 5px sandybrown;
+  border-radius: 20px;
+}
+nav {
+  width: 15%;
+  height: 80%;
+  float: left;
+}
+section {
+  width: 70%;
+  height: 80%;
+  float: left;
+}
+aside {
+  width: 50%;
+  height: 20%;
+  float: left;
+}
+footer {
+  width: 50%;
+  height: 20%;
+  clear: left;
+}
+aside {
+  width: 15%;
+  height: 80%;
+  float: right;
+}
+#list {
+  margin-left: -20px;
+}
+ul {
+  margin-left: -10px;
+}
+p,
+div {
+  padding-left: 10px;
+  padding-right: 15px;
+}
